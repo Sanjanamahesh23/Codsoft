@@ -1,0 +1,36 @@
+body {
+    font-size: 20px;
+    background-color:   #EEEDEB;
+  ;
+
+}
+h1,h3 {
+    color: black;
+}
+.a{
+    color:#134B70;
+}
+h3{
+    
+    margin-bottom: :10px;
+    border-bottom: 2px solid #ccc;
+    font-size : 24px;
+    padding-bottom: 5px;
+    background-color: #CDE8E5;
+    padding-left:15px;
+    margin-top:10px;
+    padding-top:5px;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 20px;
+}
+.contact{
+    padding-left: 15px;
+}

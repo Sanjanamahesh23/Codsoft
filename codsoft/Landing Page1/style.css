@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: #e7b963;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:  #000000;
+    font-family: "Qwitcher Grypen", cursive;
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    font-size: 20px;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color:  #000000;
+}
+
+.navbar a:hover {
+    color: #7eb826;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.tagline-container span {
+    color: #7eb826;
+}
+
+
+.tagline-container h1,
+.tagline-container p,
+.tagline-container button {
+    margin: 0;
+    color:black; /* Adjust text color as needed */
+}
+
+.tagline-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tagline-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #32CD32; /* Match the current button style */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tagline-container button:hover {
+    background-color: #228B22; /* Darken on hover */
+}
+
+
+.shop-container,.price,.new-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.box {
+    flex: 0 0 calc(33.333% - 20px);/* Changed from 33.333% to 25% */
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+
+.box img {
+    max-width: 100%;
+    height:300px;
+    border-radius: 8px;
+}
+.box img {
+    transition: transform 0.3s ease;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.price h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color: #982B1C;
+}
+
+.stars .bx {
+    color: #7eb826;
+}
+
+.box .bx-cart {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 7px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px;
+    background: #7eb826;
+    cursor: pointer;
+}
+
+.box .bx-cart:hover {
+    background: #8fc53d;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem
+}
+.about-img img{
+    width:80%;
+    border-radius:10px;
+    object-fit:contain;
+}
+.about-text span{
+    font-size:14px;
+    font-weight:500;
+    text-transform: uppercase;
+    color:#7eb826;
+}
+.about-text p{
+    font-size:0.938rem;
+    margin:0.5rem 0 1.4rem;
+}
+.about-text .button:hover {
+   text-decoration: underline;
+}
+.brands-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.brands-container img {
+    width: 100px;
+    object-fit: contain;
+    filter:grayscale(1);
+}
+.brands-container img:hover{
+    width: 100px;
+    object-fit: contain;
+    filter:grayscale(0);
+}
+.newsletter h2{
+    color:black;
+}
+.news-box{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.news-box input{
+    width:260px;
+    height: 44px;
+    border: none;
+    outline: blueviolet;
+    background: white;
+    padding: 10px;
+}
+.news-box .button{
+    height: 44px;
+    padding:11px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #32CD32;
+    color: white;
+}
+footer {
+    background-color: #ebb349;
+    padding: 50px 10%;
+    color: #000;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-box h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+   font-weight: 300px;
+}
+
+.footer-box p {
+    font-size: 0.938rem;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.footer-container p {
+    color:  #000000;
+    text-decoration: none;
+}
+
+.footer-container p :hover {
+    text-decoration: underline;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+}
